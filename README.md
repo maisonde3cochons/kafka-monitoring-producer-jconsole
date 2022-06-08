@@ -15,18 +15,16 @@
 
 <br>
 
-###  GCP에 접속하여 VM Instance를 생성한다
+####  GCP에 접속하여 VM Instance를 생성한다
 
 
-<br>
-
-### client-01 이라는 이름의 인스턴스를 생성(Seoul Region > e2-standard-4)
+#### client-01 이라는 이름의 인스턴스를 생성(Seoul Region > e2-standard-4)
 
 ![image](https://user-images.githubusercontent.com/30817824/172522602-e2f8c980-8abc-48ab-b9c5-d77c9c969365.png)
 
 <br>
 
-### Boot Disk는 Centos로 선택
+#### Boot Disk는 Centos로 선택
 
 <br>
 
@@ -39,7 +37,7 @@
 <br>
 
 
-### Java 설치 및 JAVA_HOME 설정
+#### Java 설치 및 JAVA_HOME 설정
 ```
 sudo yum install -y java
 
@@ -181,9 +179,10 @@ vi logstash-7.15.0/config/jvm.options
 
 #### 7. JConsole 접속 (GCP VM Instance의 External IP + :9998 포트 입력)
 
-![image](https://user-images.githubusercontent.com/30817824/172535580-85c52acb-7703-4c62-b759-a2297502b59d.png)
+![image](https://user-images.githubusercontent.com/30817824/172538330-747e74b9-dbce-4a53-b171-d17f41b02577.png)
+
 
 #### 8. MBeans에서 Kafka Producer의 각종 metrics들을 확인할 수 있다
 
-![image](https://user-images.githubusercontent.com/30817824/172520130-99e06b6f-02e7-4d1f-beca-1af3d0f18f01.png)
+![image](https://user-images.githubusercontent.com/30817824/172538435-7a558357-ae32-4553-960d-094fb496a1a5.png)
 
